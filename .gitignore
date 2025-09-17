@@ -1,0 +1,127 @@
+# ------------------------------
+# Node & pnpm
+# ------------------------------
+node_modules/
+.pnpm-store/
+.npm/
+.nvm/
+# Vite/rollup 缓存
+.vite/
+node_modules/.vite/
+# TypeScript 增量编译缓存
+*.tsbuildinfo
+
+# ------------------------------
+# 构建产物 / 输出目录
+# ------------------------------
+dist/
+build/
+out/
+.storybook-out/
+storybook-static/
+coverage/
+reports/
+.tmp/
+temp/
+.tmp-*/
+*.tmp
+
+# Monorepo 子包产物（apps/*）
+apps/*/dist/
+apps/*/build/
+apps/*/.next/
+apps/*/.svelte-kit/
+apps/*/.turbo/
+.turbo/
+
+# Next / Nuxt / SvelteKit / Vercel / Netlify（如有）
+.next/
+.nuxt/
+.svelte-kit/
+.vercel/
+.netlify/
+.out/
+
+# ------------------------------
+# 环境变量（务必不要提交密钥）
+# ------------------------------
+.env
+.env.*
+!.env.example     # 保留示例文件便于团队协作
+
+# ------------------------------
+# 锁文件（⚠️ 通常应提交，以下按你的要求忽略）
+# ------------------------------
+pnpm-lock.yaml    # 不建议忽略：会降低可重复构建和依赖一致性
+
+# ------------------------------
+# 日志 / 调试
+# ------------------------------
+logs/
+*.log
+*.log.*
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.pid
+*.pid.lock
+
+# ------------------------------
+# 测试工具缓存 / 输出
+# ------------------------------
+jest/**/coverage/
+*.lcov
+coverage-final.json
+.playwright/
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# ------------------------------
+# Lint / 工具缓存
+# ------------------------------
+.eslintcache
+.stylelintcache
+.prettier-cache/
+.tscache/
+
+# ------------------------------
+# IDE / 编辑器
+# ------------------------------
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history/
+
+# ------------------------------
+# 系统文件
+# ------------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# ------------------------------
+# 其他杂项
+# ------------------------------
+*.orig
+*.rej
+*.patch
+*.diff
+*.tgz
+*.tar.gz
+*.zip
+
+# docker / 本地覆盖（如有）
+docker-compose.override.yml
