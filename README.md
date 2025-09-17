@@ -57,7 +57,7 @@ start demo.mp4  # Windows
 
 或者在 GitHub 页面中点击查看：
 
-📹 [点击查看 Demo 视频](https://chatgpt.com/c/demo.mp4)
+📹 [点击查看 Demo 视频](https://github.com/HanGRQ/moviemate/blob/main/demo.mp4)
 
 ------
 
